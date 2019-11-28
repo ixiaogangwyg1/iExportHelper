@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Privacy protocol</title>
+    <style>
+        @charset "UTF-8";
+
+        body {
+            -webkit-user-select: none;
+        }
+
+        @media only screen and (max-width:359px) {
+            html {
+                font-size: 12px
+            }
+        }
+
+        @media only screen and (min-width:360px) and (max-width:374px) {
+            html {
+                font-size: 13.5px
+            }
+        }
+
+        @media only screen and (min-width:375px) and (max-width:399px) {
+            html {
+                font-size: 14.0625px
+            }
+        }
+
+        @media only screen and (min-width:400px) and (max-width:479px) {
+            html {
+                font-size: 15px
+            }
+        }
+
+        @media only screen and (min-width:480px) and (max-width:539px) {
+            html {
+                font-size: 18px
+            }
+        }
+
+        @media only screen and (min-width:540px) and (max-width:639px) {
+            html {
+                font-size: 20.25px
+            }
+        }
+
+        @media only screen and (min-width:640px) and (max-width:719px) {
+            html {
+                font-size: 24px
+            }
+        }
+
+        @media only screen and (min-width:720px) and (max-width:749px) {
+            html {
+                font-size: 27px
+            }
+        }
+
+        @media only screen and (min-width:750px) {
+            html {
+                font-size: 28.125px
+            }
+        }
+
+        body {
+            margin: 0 auto;
+            color: #444;
+            background-color: #F1F1F0;
+            font: .71111rem/1.5 微软雅黑, Microsoft YaHei
+        }
+
+        html {
+            overflow-y: scroll;
+            -webkit-text-size-adjust: 100%
+        }
+
+        html * {
+            -webkit-tap-highlight-color: transparent
+        }
+
+        dd,
+        div,
+        dl,
+        dt,
+        form,
+        h4,
+        h5,
+        h6,
+        img,
+        input,
+        li,
+        ol,
+        p,
+        select,
+        span,
+        table,
+        td,
+        th,
+        ul {
+            margin: 0;
+            padding: 0;
+            font-weight: 400
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            padding: 0
+        }
+
+        fieldset,
+        iframe,
+        img {
+            border: 0
+        }
+
+        li,
+        ol,
+        ul {
+            list-style: none
+        }
+
+        img {
+            vertical-align: middle
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        del {
+            text-decoration: line-through
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-size: 100%;
+            border: 0;
+            background: 0 0;
+            -webkit-appearance: none;
+            color: #444
+        }
+
+        b,
+        cite,
+        em,
+        font,
+        i,
+        strong,
+        sub,
+        sup {
+            font-style: normal;
+            font-size: 100%
+        }
+
+        cite,
+        em,
+        font,
+        i,
+        strong,
+        sub,
+        sup {
+            font-weight: 400
+        }
+
+        a,
+        a:focus,
+        button,
+        button:focus,
+        input,
+        input:focus,
+        select,
+        select:focus,
+        textarea,
+        textarea:focus {
+            outline: 0
+        }
+
+        a {
+            text-decoration: none;
+            outline: 0
+        }
+
+        .clearfix {
+            zoom: 1
+        }
+
+        .clearfix:after,
+        .clearfix:before {
+            content: "";
+            display: table
+        }
+
+        .clearfix:after {
+            clear: both
+        }
+
+        ::-webkit-input-placeholder {
+            color: #999
+        }
+
+        :-moz-placeholder,
+        ::-moz-placeholder {
+            color: #999
+        }
+
+        h1 {
+            font-size: 1.06667rem;
+            text-align: center;
+            margin-top: 1.06667rem;
+            color: #777
+        }
+
+        .wordsWrap {
+            padding: 0 1.28rem 1.42222rem;
+            font-size: .85333rem;
+            color: #777
+        }
+
+        h2 {
+            font-size: .92444rem
+        }
+
+        h3 {
+            font-weight: .85333rem
+        }
+
+        b,
+        h1,
+        h2,
+        h3 {
+            font-weight: 800
+        }
+
+        .textIndent {
+            text-indent: 1.42222rem
+        }
+
+        .pt40 {
+            padding-top: 1.42222rem
+        }
+
+        .mb40 {
+            margin-bottom: 1.42222rem
+        }
+
+        .pt20 {
+            padding-top: .71111rem
+        }
+
+        .textAlignR {
+            text-align: right
+        }
+
+        .textAlignC {
+            text-align: center
+        }
+
+        .textDecorationU {
+            text-decoration: underline
+        }
+
+        .repay-table {
+            margin: .17778rem 0 .35556rem
+        }
+
+        .repay-table tr td,
+        .repay-table tr th {
+            border: 1px solid #ccc;
+            font-size: .85333rem
+        }
+
+        .repay-table tr td {
+            padding-left: .53333rem;
+            line-height: 1.77778rem
+        }
+
+        .repay-table tr th {
+            line-height: 1.63556rem;
+            font-weight: 700
+        }
+
+        .repay-table tr td p {
+            line-height: 1.42222rem;
+            font-size: .85333rem
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Privacy policy</h1>
+    <div class="wordsWrap">
+        <p></p><br>
+        <p>iExporthelper is a tool that provides designers and developers with assets resource files and previews that meet the requirements. This app will not collect or use any user privacy data, please feel free to use。</p>
+        <p><b></b></p>
+        <br>
+        <p>If you have any questions, comments or suggestions, you can leave a message in the Mac App Store.
+        Or email me.</p>
+        <p>Feedback & Support :iexporthelper@hotmail.com</p>
+    </div>
+</body>
+
+</html>
